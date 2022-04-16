@@ -1,32 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="./assets/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./tailwind.css">
-    <title>Article preview component</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="./assets/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <script src="./main.js" defer></script>
+  <title>Article preview component</title>
 </head>
+
 <body>
-    
-    <h1 class="text-[80px] text-red-600">Hello Article!</h1>
-    
-    
-    
-    
-    
-    
-    <!-- Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+  <div class="h-screen bg-[#ECF2F8] flex justify-center items-center px-4">
 
-  Michelle Appleton
-  28 Jun 2020
+    <div class="flex flex-col md:flex-row font-Manrope max-w-[327px] md:max-w-[730px] bg-white rounded-[10px] relative">
+      <img src="./assets/drawer_mobile.png" alt="" class="mb-4 md:hidden">
+      <img src="./assets/drawe_desktop.png" alt="" class="hidden md:block">
 
-  Share -->
+      <!-- content -->
+      <div class="py-5 px-8 md:py-8 md:px-10">
+        <h1 class="font-bold text-[#48556A] tracking-[0.2px] leading-6 mb-3 md:text-xl md:tracking-[0.25px]">Shift the
+          overall look and feel by adding these wonderful
+          touches to furniture in your home</h1>
+        <p class="text-[#6E8098] text-[13px] font-medium tracking-[0.12px] leading-5 mb-8 md:mb-5">Ever been in a room
+          and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+
+
+        <div class="flex items-center">
+          <img src="./assets/avatar-michelle.jpg" alt="" class="w-10 h-10 rounded-full mr-4">
+          <div class="flex flex-col justify-center">
+            <h2 class="text-[#48556A] text-[13px] font-bold tracking-[0.12px] leading-5">Michelle Appleton</h2>
+            <p class="text-[#9DAEC2] text-[13px] font-medium tracking-[0.12px] leading-5">28 Jun 2020</p>
+          </div>
+          <img src="./assets/share_circle.svg" alt="" class="ml-auto mobile_share_icon cursor-pointer">
+        </div>
+
+        <!-- Mobile share overlay -->
+        <div
+          class="mobile_share absolute h-16 bg-[#48556A] bottom-0 left-0 rounded-b-[10px] w-full py-4 px-8 flex items-center hidden">
+          <p class="text-[#9DAEC2] text-[13px] leading-5 font-medium tracking-[5px] mr-[21px]">SHARE</p>
+          <div class="flex gap-4 items-center">
+            <img src="./assets/icon-facebook.svg" alt="" class="cursor-pointer">
+            <img src="./assets/icon-twitter.svg" alt="" class="cursor-pointer">
+            <img src="./assets/icon-pinterest.svg" alt="" class="cursor-pointer">
+          </div>
+          <img src="./assets/share_clicked_mobile.svg" alt="" class="ml-auto mobile_share_icon_clicked cursor-pointer">
+        </div>
+
+        <div
+          class="absolute bottom-[96px] -right-[61px] py-[18px] px-8 bg-[#48556A] rounded-[10px] desktop_tooltip hidden">
+          <div class="flex relative">
+            <p class="text-[#9DAEC2] text-[13px] leading-5 font-medium tracking-[5px] mr-[21px]">SHARE</p>
+            <div class="flex gap-4 items-center relative">
+              <img src="./assets/icon-facebook.svg" alt="" class="cursor-pointer">
+              <img src="./assets/icon-twitter.svg" alt="" class="cursor-pointer">
+              <img src="./assets/icon-pinterest.svg" alt="" class="cursor-pointer">
+            </div>
+            <div class="w-[16.97px] h-[16.97px] rotate-45 bg-[#48556A] absolute -bottom-[26.42px] right-[77.725px]">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
