@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx servor . index.html 3000 --reload --browse --static",
-    "build-css": "tailwindcss build main.css -o tailwind.css --watch"
+    "build-css": "tailwindcss build main.css -o tailwind.css"
   },
   "repository": {
     "type": "git",
