@@ -524,14 +524,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 21px;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -701,6 +693,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(157 174 194 / var(--tw-text-opacity));
 }
 
+.card {
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  /* box-shadow: 50px 40px 40px -10px rgb(0, 0, 0); */
+}
+
 @media (min-width: 768px) {
   .md\:mb-5 {
     margin-bottom: 1.25rem;
@@ -730,6 +727,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:text-xl {

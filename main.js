@@ -7,6 +7,11 @@ const desktopShareIconClicked = document.querySelector('.desktop_share_icon_clic
 let width = window.innerWidth;
 
 
+window.addEventListener('resize', () => { 
+    "use strict";
+    window.location.reload(); 
+});
+
 mobileShareIcon.addEventListener('click', () => {
         if (width < 768){
             mobileShareBar.classList.toggle('hidden')
@@ -29,4 +34,3 @@ desktopShareIconClicked.addEventListener('click', () => {
 mobileShareIconClicked.addEventListener('click', () => {
     mobileShareBar.classList.toggle('hidden')
 });
-
